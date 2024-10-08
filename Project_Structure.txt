@@ -1,0 +1,33 @@
+project-root/
+│
+├── mobile-app/
+│   ├── android/
+│   ├── ios/
+│   ├── lib/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── models/
+│   │   └── main.dart
+│   ├── assets/
+│   └── pubspec.yaml
+│
+├── backend/
+│   ├── api/
+│   │   ├── app.py
+│   │   └── requirements.txt
+│   ├── models/
+│   │   ├── asr_model/
+│   │   ├── tts_model/
+│   │   └── translation_model/
+│   ├── docker-compose.yml
+│   └── Dockerfile
+│
+└── deployment/
+    ├── cloudformation/
+    │   ├── api_infra.yml
+    ├── terraform/
+    │   └── backend.tf
+    └── ci-cd/
+        ├── .gitlab-ci.yml
+        └── deploy.sh
+

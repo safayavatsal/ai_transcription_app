@@ -1,0 +1,1 @@
+model = tf.keras.models.load_model('/Users/safayavatsal/github/Personal/ai_transcription_app/backend/models/translation_model/model/checkpoints/saved_model.pb')

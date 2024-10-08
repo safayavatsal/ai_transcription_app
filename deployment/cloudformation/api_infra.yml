@@ -1,0 +1,15 @@
+Resources:
+  ApiGateway:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: VoiceToTextApi
+  LambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: VoiceToTextHandler
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      Role: arn:aws:iam::your-role
+      Code:
+        S3Bucket: your-bucket
+        S3Key: path-to-code

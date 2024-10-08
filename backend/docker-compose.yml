@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  asr_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5000"  # Expose ASR service on port 5001
+    volumes:
+      - ./asr_model/data:/app/asr_model/data  # Mount data volume
+    environment:
+      - MODEL_PATH=/app/asr_model/model/checkpoints/  # Path to model checkpoints
+      # Add any additional environment variables
+
+  tts_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5000"  # Expose TTS service on port 5002
+    volumes:
+      - ./tts_model/data:/app/tts_model/data  # Mount data volume
+    environment:
+      - MODEL_PATH=/app/tts_model/model/checkpoints/  # Path to model checkpoints
+      # Add any additional environment variables
+
+  translation_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5003:5000"  # Expose Translation service on port 5003
+    volumes:
+      - ./translation_model/data:/app/translation_model/data  # Mount data volume
+    environment:
+      - MODEL_PATH=/app/translation_model/model/checkpoints/  # Path to model checkpoints
+      # Add any additional environment variables
+
+networks:
+  default:
+    driver: bridge

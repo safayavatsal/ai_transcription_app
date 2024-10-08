@@ -1,0 +1,2 @@
+model = Model()  # Re-define your architecture
+model.load_weights('/Users/safayavatsal/github/Personal/ai_transcription_app/backend/models/translation_model/model/checkpoints/translation_model.ckpt.index')

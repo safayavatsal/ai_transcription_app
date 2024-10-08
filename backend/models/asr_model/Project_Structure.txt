@@ -1,0 +1,16 @@
+asr_model/
+├── data/
+│   ├── audio_samples/
+│   ├── transcriptions/
+│   └── preprocessed/
+├── model/
+│   ├── asr_model.py
+│   ├── config.py
+│   ├── requirements.txt
+│   └── checkpoints/
+├── training/
+│   ├── train.py
+│   ├── evaluate.py
+│   └── utils.py
+└── README.md
+

@@ -1,0 +1,16 @@
+tts_model/
+├── data/
+│   ├── text_samples/
+│   ├── audio_clips/
+│   └── preprocessed/
+├── model/
+│   ├── tts_model.py
+│   ├── config.py
+│   ├── requirements.txt
+│   └── checkpoints/
+├── training/
+│   ├── train.py
+│   ├── evaluate.py
+│   └── utils.py
+└── README.md
+

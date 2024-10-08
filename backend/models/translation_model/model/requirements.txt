@@ -1,0 +1,7 @@
+numpy==1.23.5
+tensorflow==2.13.0
+sentencepiece==0.1.99  # For text tokenization
+transformers==4.33.0  # For Hugging Face transformers
+tqdm==4.66.1  # For progress tracking
+sacrebleu==2.3.1  # For BLEU score evaluation
+nltk==3.8.1  # Natural Language Toolkit (optional, for text preprocessing)

@@ -1,0 +1,13 @@
+stages:
+  - build
+  - deploy
+
+build_backend:
+  stage: build
+  script:
+    - docker-compose build
+
+deploy_backend:
+  stage: deploy
+  script:
+    - sh deploy.sh

@@ -1,0 +1,20 @@
+# Flutter
+.idea/
+.vscode/
+build/
+.DS_Store
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+/android/.gradle/
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Pods/
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+*.egg-info/
+.venv/
